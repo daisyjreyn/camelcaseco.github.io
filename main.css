@@ -1,1 +1,86 @@
+#header {
+    display:inline-block;
+    padding:0;
+    margin:0;
+    width:100%;
+    height:fit-content;
+    vertical-align:middle;
+}
 
+.header-child {
+    padding:0;
+    margin-right:10px;
+    align-self:flex-end;
+    display:inline-block;
+}
+
+a.header-child {
+    height:60px;
+}
+
+html:lang(ar) {
+    direction:rtl;
+}
+
+#langpick {
+    position: absolute;
+    right:10px;
+    top:20px;
+}
+
+#langpick:lang(ar) {
+    left:10px;
+    right:unset;
+}
+
+.text-right {
+    text-align:right;
+    float:right;
+}
+
+.text-right:lang(ar) {
+    text-align:left;
+    float:left;
+}
+
+@media (max-width:760px) {
+
+}
+
+@media (min-width:760px) {
+    .mobile-only {
+        display:none;
+    }
+}
+
+h1, h2 {
+    display: inline;
+}
+
+p, h1, h2 {
+    color:#060321;
+}
+
+span.highlight {
+    color:#FC60A8;
+}
+
+a {
+    color:#40aee6;
+    text-decoration-line: none;
+}
+
+a.unclickable {
+    color:#060321;
+}
+
+body {
+    background-color:f0f0fa;
+    padding:10px;
+    font-family:Cairo;
+}
+
+@font-face {
+    font-family: Cairo;
+    src:url(fonts/Cairo-VariableFont_slnt\,wght.ttf);
+}
