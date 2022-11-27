@@ -23,14 +23,11 @@ html:lang(ar) {
 }
 
 #langpick {
-    position: absolute;
-    right:10px;
-    top:20px;
+    float:right;
 }
 
 #langpick:lang(ar) {
-    left:10px;
-    right:unset;
+    float:left;
 }
 
 .text-right {
@@ -43,14 +40,37 @@ html:lang(ar) {
     float:left;
 }
 
-@media (max-width:760px) {
-
+@media (max-width:960px) {
+    #langpick {
+        position:absolute;
+        right:10px;
+        top:20px;
+    }
+    #langpick:lang(ar) {
+        left:10px;
+        top:20px;
+    }
 }
 
-@media (min-width:760px) {
+@media (min-width:960px) and (max-width:1300px) {
     .mobile-only {
         display:none;
     }
+    body {
+        margin-left:10%;
+        margin-right:10%;
+    }
+}
+
+@media (min-width:1300px) {
+    .mobile-only {
+        display:none;
+    }
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
 }
 
 h1, h2 {
@@ -59,6 +79,7 @@ h1, h2 {
 
 p, h1, h2 {
     color:#060321;
+
 }
 
 span.highlight {
@@ -68,6 +89,10 @@ span.highlight {
 a {
     color:#40aee6;
     text-decoration-line: none;
+}
+
+a, p {
+    font-size:16pt;
 }
 
 a.unclickable {
